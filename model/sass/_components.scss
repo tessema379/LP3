@@ -1,0 +1,43 @@
+// INDEX BOOK MENU BTN
+.book-menu__btn {
+    margin-top: 30px;
+    @include btn;
+    @include btn-color;
+}
+
+// INDEX FAVORITE HEART BTN
+.fa-heart {
+    @include index-favorite;
+}
+
+// MENU PAGE
+.header .fa-arrow-left {
+    position: absolute;
+    right: 90%;
+    top: 35%;
+}
+
+.menu__title .fa-heart {
+    position: absolute;
+    left: 85%;
+    top: 55%;
+    margin-right: 10px;
+}
+
+.menu__description .fa-check-circle {
+display: none;
+    visibility: hidden;
+//     // & :hover {
+//     //     background-color: $price-over-color;
+//     //     cursor: pointer;
+//     // }
+}
+
+.menu__btn {
+    width: 50%;
+    margin-top: 30px;
+    @include btn;
+    @include btn-color__reverse;
+}
+
+

@@ -1,0 +1,14 @@
+.header {   
+    
+    background-color: $light-txt;
+    width: 100%;
+    font-family: $logo-font;
+    padding: 15px 0 10px 0;
+
+    &__title {
+        text-align: center;
+        color: $dark-txt;
+    }
+    position: relative;
+
+}

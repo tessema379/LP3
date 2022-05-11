@@ -1,0 +1,31 @@
+.footer {
+    background-color: #353535;
+    padding: 25px;
+    color: $light-txt;
+    font-family: $text-font;
+
+    &__title {
+        font-family: $logo-font;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-bottom: 25px;
+    }
+
+    &__nav {
+        
+        & li {
+            padding-bottom: 10px;
+            margin: 0;
+
+            .fa-utensils {
+                padding-right: 10px;
+            }
+
+            .fa-hands-helping {
+                padding-right: 5px;
+            }
+        }
+
+    }
+
+}

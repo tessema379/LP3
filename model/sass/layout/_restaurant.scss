@@ -1,0 +1,37 @@
+.restaurant {
+    font-family: $text-font;
+    padding: 50px 15px;
+    background: $bg;
+
+    &__title {
+        padding-bottom: 10px;
+    }
+    &__card {
+        @include card;
+    }
+}
+
+.restaurant__img {
+    @include image;
+}
+
+#center {
+    object-position: center;
+}
+
+.restaurant__status {
+    @include status;
+}
+
+.restaurant__description {
+    position: relative;
+
+}
+
+.restaurant__name {
+    padding: 15px 15px 5px 15px;
+}
+
+.restaurant__neighborhood {
+    padding: 0 15px;
+}
