@@ -4,6 +4,6 @@
     margin: 0 auto;
 }
 
-a:visited {
-    color: $dark-txt;
+a:link, a:visited {
+    color: inherit;
 }
