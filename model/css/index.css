@@ -52,7 +52,7 @@
   margin: 0 auto;
 }
 
-a:link, a:visited {
+* a:link, * a:visited {
   color: inherit;
 }
 
