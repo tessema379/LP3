@@ -1,70 +1,12 @@
- // EXPLORE & COMMANDE BTN
- @mixin btn {
-    color: $light-txt;
-    padding: 15px 20px;
-    border-radius: 30px;
-    box-shadow: 0 3px 5px $shadow;
+//Grid template setting
+@mixin grid-template-set($section) {
+    grid-template-columns: repeat($section, 1fr);
 }
 
-// INDEX BOOK MENU BTN
-@mixin index-favorite {
-    position: absolute;
-    left: 85%;
-    top: 40%;
-    font-size: 23px;
-}
 
-@mixin btn-color {
-    background: linear-gradient(to bottom right, $primary-color, $secondary-color);
-}
+//Grid position setting
+@mixin grid-pos-set ($row-start, $row-end, $col-start, $col-end) {
+    grid-row: $row-start unquote("/") $row-end;
+    grid-column: $col-start unquote("/") $col-end;
 
-@mixin btn-color__reverse {
-    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-}
-
-// RESTAURANT STATUS
-@mixin status {
-    position: absolute;
-    left: 75%;
-    top: 5%;
-    font-size: 14px;
-    background-color: #99e2d0;
-    color: #008766;
-    padding: 6px 10px;
-    border-radius: 3px;
-}
-
-// CARDS
-@mixin card {
-    border-radius: 20px;
-    background: #fff;
-    position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 5px $shadow;
-}
-
-// IMAGES
-@mixin image {
-    height: 170px;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    border-radius: 20px 20px 0 0;
-}
-
-// LABEL
-@mixin label {
-    margin: 0 0 30px 15px;
-    padding: 30px 50px;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px $shadow;
-    &:hover {
-        background-color: #f5edff;
-    }
-}
-
-// SHADOW EFFECT
-@mixin shadow {
-    box-shadow: 0 3px 5px $shadow;
 }

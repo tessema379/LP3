@@ -1,13 +1,16 @@
-.header {   
-    background-color: $light-txt;
-    width: 100%;
-    font-family: $logo-font;
-    padding: 15px 0 10px 0;
+/* Début Header */
+header {
+    @extend %grid-center;
+    @include grid-template-set (1);
+    padding: 1em;
+}
 
-    &__title {
-        text-align: center;
-        color: $dark-txt;
-    }
-    position: relative;
+h1 {
+    @include grid-pos-set (1, auto, 1, auto);
+    font-family: 'Shrikhand', cursive;
+}
 
+.btn__retourHome {
+    @include grid-pos-set (1, auto, 1, auto);
+    justify-self: start;
 }

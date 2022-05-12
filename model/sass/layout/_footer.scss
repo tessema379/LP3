@@ -1,35 +1,42 @@
-.footer {
-    background-color: #353535;
-    padding: 25px;
-    color: $light-txt;
-    font-family: $text-font;
+/* Début Footer */
+footer {
+    @extend %grid-center;
+    @include grid-template-set (1);
+    padding: 1em;
+    color: $txt-fond-sombre;
+    background: #353535;
+    font-family: 'Roboto', sans-serif;
 
-    &__title {
-        font-family: $logo-font;
-        font-size: 20px;
-        font-weight: lighter;
-        padding-bottom: 25px;
+    & h2 {
+        @include grid-pos-set (1, auto, 1, auto);
+        margin: 0 0 1.5rem 0;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.4em;
+        font-weight: normal;
+        justify-self: start;
     }
 
-    &__nav {
-        
+    & ul {
+        @include grid-pos-set (2, auto, 1, 4);
+        justify-self: start;
+
         & li {
-            padding-bottom: 10px;
-            margin: 0;
+            margin: 0 0 0.5rem 0;
+        }
+    }
 
-            & a {
-                color: $light-txt;
-            }
+    & a {
+        color: $txt-fond-sombre;
 
-            .fa-utensils {
-                padding-right: 10px;
-            }
-
-            .fa-hands-helping {
-                padding-right: 5px;
-            }
+        & .fa-utensils {
+            padding: 0 1rem 0 0;
         }
 
+        & .fa-hands-helping {
+            padding: 0 0.55rem 0 0;
+        }
     }
 
 }
+
+/* Fin Footer */
