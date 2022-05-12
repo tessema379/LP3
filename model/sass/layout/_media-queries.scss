@@ -1,22 +1,21 @@
 // Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px
-@media screen and (min-width: 1440px)
-{
+@media screen and (min-width: 1980px) {
 
 }
 
 // Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px
-@media all and (min-width: 768px) and (max-width: 1440px)
-{
+@media all and (min-width: 970px) and (max-width: 1440px) {
     .book-menu__p {
-            margin-top: 10px;
+        margin-top: 10px;
     }
+
     .book-menu__btn {
         margin: 5px 0 50px 0;
     }
 
     .concept__title {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 4npm0px;
     }
 
     .concept__list {
@@ -29,7 +28,7 @@
     // .concept__list {
     //     display: flex;
     // }
-    
+
     // .concept__choises {
     //     padding: 25px;
     //     margin: 30px 20px 10px 40px;
@@ -63,22 +62,15 @@
 
         &__title {
             text-align: center;
-            margin-bottom: 10px;
         }
 
         &__nav ul {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             gap: 50px;
         }
     }
-
-
-
 }
 
 // Sur tous types d'écrans orientés verticalement
-@media all and (max-width: 375px)
-{
-
-}
+@media all and (max-width: 375px) {}

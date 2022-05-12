@@ -272,7 +272,7 @@
   padding-right: 5px;
 }
 
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 970px) and (max-width: 1440px) {
   .book-menu__p {
     margin-top: 10px;
   }
@@ -283,7 +283,7 @@
 
   .concept__title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 4npm0px;
   }
 
   .concept__list {
@@ -321,11 +321,10 @@
   }
   .footer__title {
     text-align: center;
-    margin-bottom: 10px;
   }
   .footer__nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 50px;
   }
 }
