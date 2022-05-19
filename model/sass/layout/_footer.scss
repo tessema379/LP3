@@ -1,7 +1,7 @@
 /* Début Footer */
 footer {
-    @extend %grid-center;
-    @include grid-template-set (1);
+    @extend %grid-center; // placeholder grille centrée
+    @include grid-template-set (1); // mixin grille 1 colonne 
     padding: 1em;
     color: $txt-fond-sombre;
     background: #353535;
@@ -14,15 +14,54 @@ footer {
         font-size: 1.4em;
         font-weight: normal;
         justify-self: start;
+
+        @media (min-width: 521px) {
+            margin: 0 auto;
+            padding-bottom: 1rem;
+        }
+
     }
 
     & ul {
         @include grid-pos-set (2, auto, 1, 4);
         justify-self: start;
 
+        @media (min-width: 981px) and (max-width: 1880px) {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10rem;
+            margin: 0 auto;
+        }
+
+
+        @media (min-width: 621px) and (max-width: 980px) {
+            display: flex;
+            gap: 2rem;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 521px) and (max-width: 620px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            gap: 0;
+            margin: 0 2rem 0 2rem;
+        }
+
+     
+        @media (max-width: 520px) {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 0;
+        }
+
+
         & li {
             margin: 0 0 0.5rem 0;
         }
+
     }
 
     & a {
@@ -36,6 +75,8 @@ footer {
             padding: 0 0.55rem 0 0;
         }
     }
+
+
 
 }
 

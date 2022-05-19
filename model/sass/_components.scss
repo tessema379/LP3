@@ -1,3 +1,6 @@
+// COMPOSANTS
+
+// Élément de liste
 .list-item {
     padding: 1.5em 1em;
     text-align: left;
@@ -5,6 +8,7 @@
     box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
 }
 
+// Bouton
 .btn {
     padding: 1em 1.5em;
     color: $txt-fond-sombre;
@@ -30,8 +34,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }
-
-
 
 .btn__like,
 button {
@@ -61,11 +63,157 @@ button:hover {
     & .heart-away {
         opacity: 0;
         transform: scale(0);
-
     }
 
     & .heart-hover {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+//  Loading animation
+.loader-holder {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: $gris-clair;
+    animation: 1s fadeOut 5500ms ease forwards;
+}
+
+// Disparition du loading 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+// Paramètres des lettres et des points animés
+.dot {
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
+    margin: 0 5px;
+    position: relative;
+    animation: dot-animation 1s infinite ease-in-out;
+}
+
+// Délai d'animation des lettres et des points
+.dot:nth-child(1) {
+    animation-delay: 0.010s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: calc(0.020s * 2);
+}
+
+.dot:nth-child(3) {
+    animation-delay: calc(0.030s * 3);
+}
+
+.dot:nth-child(4) {
+    animation-delay: calc(0.040s * 4);
+}
+
+.dot:nth-child(5) {
+    animation-delay: calc(0.050s * 5);
+}
+
+.dot:nth-child(6) {
+    animation-delay: calc(0.060s * 6);
+}
+
+.dot:nth-child(7) {
+    animation-delay: calc(0.070s * 7);
+}
+
+.dot:nth-child(8) {
+    animation-delay: calc(0.080s * 8);
+}
+
+.dot:nth-child(9) {
+    animation-delay: calc(0.090s * 8);
+}
+
+.dot:nth-child(10) {
+    animation-delay: calc(0.100s * 8);
+}
+
+.dot:nth-child(11) {
+    animation-delay: calc(0.110s * 8);
+}
+
+// Couleurs de chaque lettre et point
+.one {
+    color: #9356DC;
+}
+
+.two {
+    color: #9356DC;
+}
+
+.three {
+    color: #FF79DA;
+}
+
+.four {
+    color: #FF79DA;
+}
+
+.five {
+    color: #99E2D0;
+}
+
+.six {
+    color: #99E2D0;
+}
+
+.seven {
+    color: #99E2D0;
+}
+
+.eight {
+    color: #99E2D0;
+}
+
+.nine {
+    color: #9356DC;
+}
+
+.ten {
+    color: #FF79DA;
+}
+
+.eleven {
+    color: #99E2D0;
+}
+
+// Animation des lettres et des points
+@keyframes dot-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    30% {
+        margin-top: -30px;
+    }
+
+    50% {
+        margin-top: -30px;
+    }
+
+    80% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
     }
 }

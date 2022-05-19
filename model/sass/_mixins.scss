@@ -1,12 +1,16 @@
 //Grid template setting
+/*
+Mise en page du Modèle de grille 
+*/
+
 @mixin grid-template-set($section) {
     grid-template-columns: repeat($section, 1fr);
 }
-
 
 //Grid position setting
 @mixin grid-pos-set ($row-start, $row-end, $col-start, $col-end) {
     grid-row: $row-start unquote("/") $row-end;
     grid-column: $col-start unquote("/") $col-end;
-
 }
+
+
