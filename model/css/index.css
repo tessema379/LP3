@@ -18,7 +18,7 @@ main .restaurantMenu, main .theRestaurants, main .working, main .presentation, m
 
 .btn {
   padding: 1em 1.5em;
-  color: #000000;
+  color: #ffffff;
   transition: 250ms;
 }
 .btn--gradient {
@@ -235,7 +235,7 @@ h1 {
 footer {
   grid-template-columns: repeat(1, 1fr);
   padding: 1em;
-  color: #000000;
+  color: #ffffff;
   background: #353535;
   font-family: "Roboto", sans-serif;
 }
@@ -297,7 +297,7 @@ footer ul li {
   margin: 0 0 0.5rem 0;
 }
 footer a {
-  color: #000000;
+  color: #ffffff;
 }
 footer a .fa-utensils {
   padding: 0 1rem 0 0;
@@ -375,7 +375,7 @@ main .working li::before {
   color: #000000;
 }
 main .working li::before i {
-  color: #9f9f9f;
+  color: #9b9b9b;
 }
 main .working li:hover {
   background-color: #f2eafb;
@@ -390,6 +390,7 @@ main .working p {
 }
 main .working i {
   padding: 0 1em 0 0;
+  color: #9b9b9b;
 }
 main .theRestaurants {
   grid-template-columns: repeat(1, 1fr);
@@ -428,7 +429,7 @@ main .theRestaurants ul li a {
   display: block;
   position: relative;
   padding: 0 0 0.7rem 0;
-  color: #ffffff;
+  color: #000000;
   border-radius: 1.5em;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }

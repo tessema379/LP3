@@ -3,7 +3,7 @@ footer {
     @extend %grid-center; // placeholder grille centrée
     @include grid-template-set (1); // mixin grille 1 colonne 
     padding: 1em;
-    color: $txt-dark-background;
+    color: $txt-light-background;
     background: #353535;
     font-family: 'Roboto', sans-serif;
 
@@ -66,7 +66,7 @@ footer {
     }
 
     & a {
-        color: $txt-dark-background;
+        color: $txt-light-background;
 
         & .fa-utensils {
             padding: 0 1rem 0 0;

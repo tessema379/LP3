@@ -107,6 +107,7 @@ main {
 
         & i {
             padding: 0 1em 0 0;
+            color: $txt-gray;
         }
     }
 
@@ -147,7 +148,7 @@ main {
                     display: block;
                     position: relative;
                     padding: 0 0 0.7rem 0;
-                    color: $txt-light-background;
+                    color: $txt-dark-background;
                     border-radius: 1.5em;
                     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
