@@ -3,8 +3,8 @@
 Mise en page du Modèle de grille 
 */
 
-@mixin grid-template-set($section) {
-    grid-template-columns: repeat($section, 1fr);
+@mixin grid-template-set($section ) {
+    grid-template-columns: repeat($section , 1fr);
 }
 
 //Grid position setting
@@ -12,5 +12,3 @@ Mise en page du Modèle de grille
     grid-row: $row-start unquote("/") $row-end;
     grid-column: $col-start unquote("/") $col-end;
 }
-
-

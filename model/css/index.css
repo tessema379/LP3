@@ -3,7 +3,7 @@
 Mise en page du Modèle de grille 
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
+main .restaurantMenu, main .theRestaurants, main .working, main .presentation, main .location, footer, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -18,7 +18,7 @@ main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentati
 
 .btn {
   padding: 1em 1.5em;
-  color: #ffffff;
+  color: #000000;
   transition: 250ms;
 }
 .btn--gradient {
@@ -50,6 +50,7 @@ button .heart-hover {
   transition: all 0.5s;
   background-color: black;
   background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -90,7 +91,7 @@ button:hover .heart-hover {
 }
 .dot {
   font-family: "Shrikhand", cursive;
-  font-size: 50px;
+  font-size: 30px;
   margin: 0 5px;
   position: relative;
   animation: dot-animation 1s infinite ease-in-out;
@@ -142,57 +143,57 @@ button:hover .heart-hover {
 
 .one {
   color: #9356DC;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .two {
   color: #9356DC;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .three {
   color: #FF79DA;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .four {
   color: #FF79DA;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .five {
   color: #99E2D0;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .six {
   color: #99E2D0;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .seven {
   color: #99E2D0;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .eight {
   color: #99E2D0;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .nine {
   color: #9356DC;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .ten {
   color: #FF79DA;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .eleven {
   color: #99E2D0;
-  text-shadow: 0 3px 10px rgb(130, 130, 130);
+  text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 @keyframes dot-animation {
@@ -212,7 +213,7 @@ button:hover .heart-hover {
     margin-top: 0;
   }
 }
-/* Début Header */
+/* Start Header */
 header {
   grid-template-columns: repeat(1, 1fr);
   padding: 1em;
@@ -224,17 +225,17 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-.btn__retourHome {
+.btn__backHome {
   grid-row: 1 / auto;
   grid-column: 1 / auto;
   justify-self: start;
 }
 
-/* Début Footer */
+/* Start Footer */
 footer {
   grid-template-columns: repeat(1, 1fr);
   padding: 1em;
-  color: #ffffff;
+  color: #000000;
   background: #353535;
   font-family: "Roboto", sans-serif;
 }
@@ -296,7 +297,7 @@ footer ul li {
   margin: 0 0 0.5rem 0;
 }
 footer a {
-  color: #ffffff;
+  color: #000000;
 }
 footer a .fa-utensils {
   padding: 0 1rem 0 0;
@@ -305,21 +306,21 @@ footer a .fa-hands-helping {
   padding: 0 0.55rem 0 0;
 }
 
-/* Fin Footer */
-/* Début Main */
+/* End Footer */
+/* Start Main */
 main {
   font-family: "Roboto", sans-serif;
-  /* Debut section localisation */
-  /* Debut section lesRestaurants */
-  /* Début section menuDuResto */
+  /* Start section  location */
+  /* Start section  theRestaurants */
+  /* Start section  restaurantMenu */
 }
-main .localisation {
+main .location {
   grid-template-columns: repeat(1, 1fr);
   padding: 1em;
   background: #eaeaea;
   background: linear-gradient(180deg, rgba(173, 173, 173, 0.35) 0%, rgba(234, 234, 234, 0.75) 15%, rgb(234, 234, 234) 100%);
 }
-main .localisation i {
+main .location i {
   padding: 0 0.5em 0 0;
 }
 main .presentation {
@@ -334,16 +335,16 @@ main .presentation h2 {
 main .presentation p {
   padding: 1em 5em 2em;
 }
-main .commentCaMarche {
+main .working {
   grid-template-columns: repeat(1, 1fr);
   padding: 3em 1em;
 }
-main .commentCaMarche h2 {
+main .working h2 {
   grid-row: 1 / auto;
   grid-column: 1 / 2;
   justify-self: start;
 }
-main .commentCaMarche ol {
+main .working ol {
   grid-row: 2 / auto;
   grid-column: 1 / 4;
   display: grid;
@@ -354,16 +355,16 @@ main .commentCaMarche ol {
   counter-reset: section;
 }
 @media (max-width: 960px) {
-  main .commentCaMarche ol {
+  main .working ol {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 680px) {
-  main .commentCaMarche ol {
+  main .working ol {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-main .commentCaMarche li::before {
+main .working li::before {
   counter-increment: section;
   content: counter(section);
   position: relative;
@@ -371,36 +372,36 @@ main .commentCaMarche li::before {
   padding: 0.3em 0.6em;
   border-radius: 70%;
   background-color: #9356DC;
-  color: #ffffff;
+  color: #000000;
 }
-main .commentCaMarche li::before i {
+main .working li::before i {
   color: #9f9f9f;
 }
-main .commentCaMarche li:hover {
+main .working li:hover {
   background-color: #f2eafb;
 }
-main .commentCaMarche li:hover i {
+main .working li:hover i {
   color: #9356DC;
 }
-main .commentCaMarche p {
+main .working p {
   display: inline-block;
   position: relative;
   left: -0.7em;
 }
-main .commentCaMarche i {
+main .working i {
   padding: 0 1em 0 0;
 }
-main .lesRestaurants {
+main .theRestaurants {
   grid-template-columns: repeat(1, 1fr);
   padding: 3em 1em;
   background: #f6f6f6;
 }
-main .lesRestaurants h2 {
+main .theRestaurants h2 {
   grid-row: 1 / auto;
   grid-column: 1 / 2;
   justify-self: start;
 }
-main .lesRestaurants ul {
+main .theRestaurants ul {
   grid-row: 2 / auto;
   grid-column: 1 / 5;
   display: grid;
@@ -410,92 +411,92 @@ main .lesRestaurants ul {
   margin: 1em 0;
 }
 @media (max-width: 960px) {
-  main .lesRestaurants ul {
+  main .theRestaurants ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 680px) {
-  main .lesRestaurants ul {
+  main .theRestaurants ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-main .lesRestaurants ul li {
+main .theRestaurants ul li {
   display: inline-block;
   width: 100%;
 }
-main .lesRestaurants ul li a {
+main .theRestaurants ul li a {
   display: block;
   position: relative;
   padding: 0 0 0.7rem 0;
-  color: #000000;
+  color: #ffffff;
   border-radius: 1.5em;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-main .lesRestaurants ul li a .sticker {
+main .theRestaurants ul li a .sticker {
   position: absolute;
   right: 1em;
   top: 1em;
   padding: 0.4em 0.6em;
   color: #008766;
-  background: #99e2d0;
+  background: #99E2D0;
   border-radius: 0.2em;
 }
-main .lesRestaurants ul li a img {
+main .theRestaurants ul li a img {
   padding: 0 0 0.5rem 0;
   width: 100%;
   height: 12.5em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0 0;
 }
-main .lesRestaurants ul li a h3,
-main .lesRestaurants ul li a p {
+main .theRestaurants ul li a h3,
+main .theRestaurants ul li a p {
   padding: 0 1rem 0.5rem;
 }
-main .lesRestaurants ul li a .btn__like {
+main .theRestaurants ul li a .btn__like {
   position: absolute;
   bottom: 2.5rem;
   right: 1.5rem;
   font-size: 1.5em;
   cursor: pointer;
 }
-main .menuDuResto {
+main .restaurantMenu {
   grid-template-columns: repeat(1, 1fr);
   padding: 0 0 3em;
   justify-items: normal;
   background: #f6f6f6;
 }
-main .menuDuResto__cover {
+main .restaurantMenu__cover {
   margin: 0 0 -5em 0;
   width: 100%;
   height: 20em;
   object-fit: cover;
 }
-main .menuDuResto__carte {
+main .restaurantMenu__menu {
   margin: 1em 0;
   padding: 1em;
   background: #f6f6f6;
   border-radius: 1.5em;
 }
-main .menuDuResto__carte h2 {
+main .restaurantMenu__menu h2 {
   font-family: "Shrikhand", cursive;
   position: relative;
 }
-main .menuDuResto__carte h2 button {
+main .restaurantMenu__menu h2 button {
   position: absolute;
   bottom: 0.3rem;
   right: 1rem;
   font-size: 0.9em;
   cursor: pointer;
 }
-main .menuDuResto__carte h3 {
+main .restaurantMenu__menu h3 {
   margin: 2em 0 0 0.3em;
   padding-bottom: 0.3em;
-  border-bottom: 5px solid #99e2d0;
+  border-bottom: 5px solid #99E2D0;
   width: 2.5rem;
   font-weight: normal;
   text-transform: uppercase;
 }
-main .menuDuResto__carte ul {
+main .restaurantMenu__menu ul {
   grid-row: 3 / auto;
   grid-column: 1 / 4;
   display: grid;
@@ -505,26 +506,26 @@ main .menuDuResto__carte ul {
   justify-self: normal;
 }
 @media (max-width: 960px) {
-  main .menuDuResto__carte ul {
+  main .restaurantMenu__menu ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 680px) {
-  main .menuDuResto__carte ul {
+  main .restaurantMenu__menu ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-main .menuDuResto__carte ul li {
+main .restaurantMenu__menu ul li {
   position: relative;
   padding: 1em;
   cursor: pointer;
   overflow: hidden;
   font-size: 1.05em;
 }
-main .menuDuResto__carte ul li h4 {
+main .restaurantMenu__menu ul li h4 {
   padding-bottom: 0.5rem;
 }
-main .menuDuResto__carte ul li p {
+main .restaurantMenu__menu ul li p {
   font-size: 1em;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -532,14 +533,14 @@ main .menuDuResto__carte ul li p {
   overflow: hidden;
   transition: all 0.5s;
 }
-main .menuDuResto__carte ul li strong {
+main .restaurantMenu__menu ul li strong {
   position: absolute;
   bottom: 1rem;
   right: 2rem;
   transition: all 0.5s;
   font-weight: 600;
 }
-main .menuDuResto__carte ul li span {
+main .restaurantMenu__menu ul li span {
   position: absolute;
   right: -5rem;
   top: 0rem;
@@ -549,43 +550,43 @@ main .menuDuResto__carte ul li span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #000000;
   background: #99E2D0;
   transition: all 0.5s;
 }
-main .menuDuResto__carte ul li span .fa-check-circle {
+main .restaurantMenu__menu ul li span .fa-check-circle {
   transform: rotate(-240deg);
   transition: all 0.5s;
 }
-main .menuDuResto__carte ul .list-item {
+main .restaurantMenu__menu ul .list-item {
   animation: appear 1000ms forwards;
   opacity: 0;
 }
-main .menuDuResto__carte ul .list-item--1 {
+main .restaurantMenu__menu ul .list-item--1 {
   animation-delay: 100ms;
 }
-main .menuDuResto__carte ul .list-item--2 {
+main .restaurantMenu__menu ul .list-item--2 {
   animation-delay: 200ms;
 }
-main .menuDuResto__carte ul .list-item--3 {
+main .restaurantMenu__menu ul .list-item--3 {
   animation-delay: 300ms;
 }
-main .menuDuResto__carte ul .list-item--4 {
+main .restaurantMenu__menu ul .list-item--4 {
   animation-delay: 400ms;
 }
-main .menuDuResto__carte ul .list-item--5 {
+main .restaurantMenu__menu ul .list-item--5 {
   animation-delay: 500ms;
 }
-main .menuDuResto__carte ul .list-item--6 {
+main .restaurantMenu__menu ul .list-item--6 {
   animation-delay: 600ms;
 }
-main .menuDuResto__carte ul .list-item--7 {
+main .restaurantMenu__menu ul .list-item--7 {
   animation-delay: 700ms;
 }
-main .menuDuResto__carte ul .list-item--8 {
+main .restaurantMenu__menu ul .list-item--8 {
   animation-delay: 800ms;
 }
-main .menuDuResto__carte ul .list-item--9 {
+main .restaurantMenu__menu ul .list-item--9 {
   animation-delay: 900ms;
 }
 @keyframes appear {
@@ -597,19 +598,19 @@ main .menuDuResto__carte ul .list-item--9 {
     opacity: 1;
   }
 }
-main .menuDuResto__carte ul li:hover p {
+main .restaurantMenu__menu ul li:hover p {
   width: 57%;
 }
-main .menuDuResto__carte ul li:hover strong {
+main .restaurantMenu__menu ul li:hover strong {
   right: 6.5rem;
 }
-main .menuDuResto__carte ul li:hover span {
+main .restaurantMenu__menu ul li:hover span {
   right: 0;
 }
-main .menuDuResto__carte ul li:hover span .fa-check-circle {
+main .restaurantMenu__menu ul li:hover span .fa-check-circle {
   transform: rotate(0deg);
 }
-main .menuDuResto .btn {
+main .restaurantMenu .btn {
   text-align: center;
   margin: 0 auto;
   padding: 1rem 5rem;

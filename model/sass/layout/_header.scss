@@ -1,4 +1,4 @@
-/* Début Header */
+/* Start Header */
 header {
     @extend %grid-center;
     @include grid-template-set (1);
@@ -10,8 +10,7 @@ h1 {
     font-family: 'Shrikhand', cursive;
 }
 
-.btn__retourHome {
+.btn__backHome {
     @include grid-pos-set (1, auto, 1, auto);
     justify-self: start;
 }
-

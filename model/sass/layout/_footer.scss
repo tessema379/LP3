@@ -1,9 +1,9 @@
-/* Début Footer */
+/* Start Footer */
 footer {
     @extend %grid-center; // placeholder grille centrée
     @include grid-template-set (1); // mixin grille 1 colonne 
     padding: 1em;
-    color: $txt-fond-sombre;
+    color: $txt-dark-background;
     background: #353535;
     font-family: 'Roboto', sans-serif;
 
@@ -66,7 +66,7 @@ footer {
     }
 
     & a {
-        color: $txt-fond-sombre;
+        color: $txt-dark-background;
 
         & .fa-utensils {
             padding: 0 1rem 0 0;
@@ -81,4 +81,4 @@ footer {
 
 }
 
-/* Fin Footer */
+/* End Footer */

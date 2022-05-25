@@ -11,14 +11,14 @@
 // Bouton
 .btn {
     padding: 1em 1.5em;
-    color: $txt-fond-sombre;
+    color: $txt-dark-background;
     transition: 250ms;
 
     &--gradient {
         background-image:
             radial-gradient(100% 50% at 20% 10%,
-                #FF79DA 0%,
-                #9356DC 200%);
+                $pink-secondary 0%,
+                $purple-primary 200%);
     }
 
     &--radius {
@@ -50,7 +50,8 @@ button {
         transform: scale(0);
         transition: all 0.5s;
         background-color: black;
-        background-image: linear-gradient(0deg, $rose-secondaire, $violet-primaire);
+        background-image: linear-gradient(0deg, $pink-secondary, $purple-primary);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
@@ -80,7 +81,7 @@ button:hover {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: $gris-clair;
+    background-color: $light-gray;
     animation: 1s fadeOut 5500ms ease forwards; // Animation de transition
 }
 
@@ -100,7 +101,7 @@ button:hover {
 // Paramètres des lettres et des points animés
 .dot {
     font-family: 'Shrikhand', cursive;
-    font-size: 50px;
+    font-size: 30px;
     margin: 0 5px;
     position: relative;
     animation: dot-animation 1s infinite ease-in-out;
@@ -153,58 +154,58 @@ button:hover {
 
 // Couleurs de chaque lettre et point
 .one {
-    color: #9356DC;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $purple-primary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .two {
-    color: #9356DC;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $purple-primary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .three {
-    color: #FF79DA;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $pink-secondary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .four {
-    color: #FF79DA;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $pink-secondary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .five {
-    color: #99E2D0;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $aqua-tertiary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .six {
-    color: #99E2D0;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $aqua-tertiary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .seven {
-    color: #99E2D0;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $aqua-tertiary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .eight {
-    color: #99E2D0;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $aqua-tertiary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .nine {
-    color: #9356DC;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $purple-primary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .ten {
-    color: #FF79DA;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $pink-secondary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 .eleven {
-    color: #99E2D0;
-    text-shadow: 0 3px 10px rgb(130, 130, 130);
+    color: $aqua-tertiary;
+    text-shadow: 0 3px 10px rgb(100, 100, 100);
 }
 
 // Animation des lettres et des points

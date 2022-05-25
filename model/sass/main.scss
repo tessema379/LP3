@@ -12,12 +12,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-/* Début Main */
+/* Start Main */
 main {
     font-family: 'Roboto', sans-serif;
 
-    /* Debut section localisation */
-    & .localisation {
+    /* Start section  location */
+    & .location {
         @extend %grid-center;
         @include grid-template-set (1);
         padding: 1em;
@@ -48,7 +48,7 @@ main {
         }
     }
 
-    & .commentCaMarche {
+    & .working {
         @extend %grid-center;
         @include grid-template-set (1);
         padding: 3em 1em;
@@ -83,19 +83,19 @@ main {
             left: -1.9em;
             padding: 0.3em 0.6em;
             border-radius: 70%;
-            background-color: $violet-primaire;
-            color: $txt-fond-sombre;
+            background-color: $purple-primary;
+            color: $txt-dark-background;
 
             & i {
-                color: $txt-gris;
+                color: $txt-gray;
             }
         }
 
         & li:hover {
-            background-color: lighten($violet-primaire, 35%);
+            background-color: lighten($purple-primary, 35%);
 
             & i {
-                color: $violet-primaire;
+                color: $purple-primary;
             }
         }
 
@@ -111,8 +111,8 @@ main {
     }
 
 
-    /* Debut section lesRestaurants */
-    & .lesRestaurants {
+    /* Start section  theRestaurants */
+    & .theRestaurants {
         @extend %grid-center;
         @include grid-template-set (1);
         padding: 3em 1em;
@@ -147,7 +147,7 @@ main {
                     display: block;
                     position: relative;
                     padding: 0 0 0.7rem 0;
-                    color: $txt-fond-clair;
+                    color: $txt-light-background;
                     border-radius: 1.5em;
                     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
@@ -156,8 +156,8 @@ main {
                         right: 1em;
                         top: 1em;
                         padding: 0.4em 0.6em;
-                        color: $txt-fond-vert;
-                        background: $vert-clair;
+                        color: $txt-green-background;
+                        background: $aqua-tertiary;
                         border-radius: 0.2em;
                     }
 
@@ -187,8 +187,8 @@ main {
         }
     }
 
-    /* Début section menuDuResto */
-    & .menuDuResto {
+    /* Start section  restaurantMenu */
+    & .restaurantMenu {
         @extend %grid-center;
         @include grid-template-set (1);
         padding: 0 0 3em;
@@ -202,7 +202,7 @@ main {
             object-fit: cover;
         }
 
-        &__carte {
+        &__menu {
             margin: 1em 0;
             padding: 1em;
             background: #f6f6f6;
@@ -224,7 +224,7 @@ main {
             & h3 {
                 margin: 2em 0 0 .3em;
                 padding-bottom: .3em;
-                border-bottom: 5px solid $vert-clair;
+                border-bottom: 5px solid $aqua-tertiary;
                 width: 2.5rem;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -285,8 +285,8 @@ main {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        color: $txt-fond-sombre;
-                        background: $aqua-tertiaire;
+                        color: $txt-dark-background;
+                        background: $aqua-tertiary;
                         transition: all 0.5s;
 
                         & .fa-check-circle {
