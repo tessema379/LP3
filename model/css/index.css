@@ -551,7 +551,7 @@ main .restaurantMenu__menu ul li span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
   background: #99E2D0;
   transition: all 0.5s;
 }
