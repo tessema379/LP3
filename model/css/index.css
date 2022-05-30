@@ -372,7 +372,7 @@ main .working li::before {
   padding: 0.3em 0.6em;
   border-radius: 70%;
   background-color: #9356DC;
-  color: #000000;
+  color: #ffffff;
 }
 main .working li::before i {
   color: #9b9b9b;
@@ -525,6 +525,11 @@ main .restaurantMenu__menu ul li {
 }
 main .restaurantMenu__menu ul li h4 {
   padding-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 main .restaurantMenu__menu ul li p {
   font-size: 1em;
@@ -598,6 +603,9 @@ main .restaurantMenu__menu ul .list-item--9 {
     transform: translateY(0);
     opacity: 1;
   }
+}
+main .restaurantMenu__menu ul li:hover h4 {
+  width: 70%;
 }
 main .restaurantMenu__menu ul li:hover p {
   width: 57%;

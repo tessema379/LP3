@@ -84,7 +84,7 @@ main {
             padding: 0.3em 0.6em;
             border-radius: 70%;
             background-color: $purple-primary;
-            color: $txt-dark-background;
+            color: $txt-light-background;
 
             & i {
                 color: $txt-gray;
@@ -257,6 +257,11 @@ main {
 
                     & h4 {
                         padding-bottom: .5rem;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 90%;
+                        overflow: hidden;
+                        transition: all 0.5s;
                     }
 
                     & p {
@@ -321,6 +326,10 @@ main {
                 }
 
                 & li:hover {
+                     & h4 {
+                         width: 70%;
+                     }
+
                     & p {
                         width: 57%;
                     }
